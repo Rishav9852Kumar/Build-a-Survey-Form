@@ -8,12 +8,42 @@
     when they ask about your youth and college life,i am giving you a chance 
     to build your own memories and enjoy life to it fullest</p>
     <form id="survey-form"> 
-        <label for="name" id="name">Name:</label><br>
+        <label for="name" id="name-label">Name:</label><br>
         <input type="text" id="name" name="name" value="Enter your Name"><br>
-        <label for="email">Enter Your Mail</label><br>
+        <label for="email" id="email-label">Enter Your Mail</label><br>
         <input type="email" id="email" name="email" value="Enter your E-mail" multiple><br>
-        <label for="number">Enter Your Age</label><br>
-        <input type="number" id="number" name="number" value="0"><br>
-
-        
+        <label for="number" id="number-label">Enter Your Age</label><br>
+        <input type="number" id="number" name="number" value="0" min="18" max="60"><br>
+        <label for="Batch" id="dropdown">Batch</label><br>
+        <select id="Batch" name="Batch">
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+        </select>
+        <p>Number clubs You are part of :- </p>
+        <input type="radio" id="One" name="clubs" value="One" >
+        <label for="One" >One</label><br>
+        <input type="radio" id="Two" name="clubs" value="Two">
+        <label for="Two" >Two</label><br>
+        <input type="radio" id="Three" name="clubs" value="Three">
+        <label for="Three">Three</label><br>
+        <input type="radio" id="more" name="clubs" value="more">
+        <label for="more">More</label><br>
+        <p>Choose Your Area of Interest </p>
+        <input type="checkbox" id="cultural" name="interest" value="choice">
+        <label for="cultural">Cultural  Clubs</label><br>
+        <input type="checkbox" id="sports" name="interest" value="choice">
+        <label for="sports" >Sports</label><br>
+        <input type="checkbox" id="technical" name="interest" value="choice">
+        <label for="technical">Technical</label><br>
+        <input type="checkbox" id="Media-and-PR" name="interest" value="choice">
+        <label for="Media-and-PR">Media and PR</label><br>
+        <input type="checkbox" id="Management" name="interest" value="choice">
+        <label for="Management">Management</label><br><br>
+       
+        <label for="comments" id="comments">Any comments or suggestions?</label><br><br>
+        <textarea rows="4" col="50" name="comment" form="userform">Enter text here....
+        </textarea><br>
+        <input type="submit">
     </form>
